@@ -1,0 +1,25 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: entando-env
+data:
+  DB_DRIVER: mysql
+  DB_SQL_CHECK: SELECT 1
+  DB_INITIAL_POOL_SIZE: "1"
+  DB_MAX_POOL_SIZE: "100"
+  DB_PORT_JNDI: java:jboss/datasources/unicaPortDataSource
+  DB_PORT_CONN: jdbc:mysql://mysql:3306/unicaPort2
+  DB_PORT_UID: agile
+  DB_PORT_PSW: agile
+  DB_SERV_JNDI: java:jboss/datasources/unicaServDataSource
+  DB_SERV_CONN: jdbc:mysql://mysql:3306/unicaServ2
+  DB_SERV_UID: agile
+  DB_SERV_PSW: agile
+  OPENSHIFT_KUBE_PING_NAMESPACE: pipelines-tutorial
+  OPENSHIFT_KUBE_PING_LABELS: app=test-openshift-4-git
+  OPENSHIFT_KUBE_PING_PORT_NAME: ping
+  JGROUPS_CLUSTER_PASSWORD: JYrkh2aoiESUQXGquyrACDUA510ALBdHnwjLYjgC
+  XMS: "4096"
+  XMX: "4096"
+  TZ: Europe/Rome
