@@ -193,9 +193,11 @@
                         <driver-class>org.mariadb.jdbc.Driver</driver-class>
                         <xa-datasource-class>org.mariadb.jdbc.MySQLDataSource</xa-datasource-class>
                     </driver>
+                    <driver name="mysql" module="com.mysql.jdbc">
+                        <driver-class>com.mysql.jdbc.Driver</driver-class>
+                    </driver>
                     <driver name="postgresql" module="org.postgresql.jdbc">
                         <driver-class>org.postgresql.Driver</driver-class>
-                        <xa-datasource-class>org.postgresql.xa.PGXADatataSource</xa-datasource-class>
                     </driver>
                     <!-- ##DRIVERS## -->
                 </drivers>
