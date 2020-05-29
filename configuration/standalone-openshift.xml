@@ -785,7 +785,7 @@
                 <host name="default-host" alias="localhost">
                     <location name="/" handler="welcome-content"/>
                     <location name="/cmsresources" handler="cmsresources"/>
-                    <location name="/resources" handler="cmsresources"/>
+                    <location name="/static" handler="cmsresources"/>
                     <!-- ##ACCESS_LOG_VALVE## -->
                     <!-- ##FILTER_REFS## -->
                     <http-invoker security-realm="ApplicationRealm"/>
