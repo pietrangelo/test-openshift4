@@ -590,6 +590,20 @@
                     <transaction locking="OPTIMISTIC" mode="BATCH"/>
                 </replicated-cache>
             </cache-container>
+            <cache-container name="jpsubsitessubsitemanagercache" default-cache="Entando_SubsiteManager">
+                <transport />
+                <replicated-cache name="Entando_SubsiteManager">
+                    <locking acquire-timeout="60000"/>
+                    <transaction locking="OPTIMISTIC" mode="BATCH"/>
+                </replicated-cache>
+            </cache-container>
+            <cache-container name="jpnewsletternewslettermanagercache" default-cache="Entando_INewsletterManager">
+                <transport />
+                <replicated-cache name="Entando_INewsletterManager">
+                    <locking acquire-timeout="60000"/>
+                    <transaction locking="OPTIMISTIC" mode="BATCH"/>
+                </replicated-cache>
+            </cache-container>
         </subsystem>
         <subsystem xmlns="urn:jboss:domain:io:2.0">
             <worker name="default"/>
